@@ -13,7 +13,7 @@ const Home = () => {
       </div>
 
       <div className="bg-[#F7F8FA] w-full">
-        <div className="w-full min-h-screen px-5 py-10 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div className="w-full min-h-screen px-30 py-20 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {" "}
           {AllCardData.map((items) => (
             <CardData key={items.id} items={items} />
