@@ -1,13 +1,16 @@
-import { Link, useLoaderData, useParams } from "react-router";
+import { useContext } from "react";
+import { useLoaderData, useParams } from "react-router";
+import { DataContext } from "../../ContextApI/ContextApi";
 
 const EachCardDetails = () => {
   const params = useParams();
   const details = useLoaderData();
 
-  // console.log("Details in EachCardDetails---------->", details);
-  // console.log("Params in EachCardDetails---------->", params);
+  const {  handleCallDetails, handleTextDetails, handleVideoDetails}  = useContext(DataContext)
 
-  const singleData = details.find((data) => data.id === parseInt(params.id));
+
+
+   const singleData = details.find((data) => data.id === parseInt(params.id));
   //    console.log("Single Data in EachCardDetails---------->", singleData);
 
 
@@ -136,20 +139,20 @@ const EachCardDetails = () => {
               </h1>
 
               <div className="grid grid-cols-3 gap-4 ">
-                <Link className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200">
+                <button onClick={() => handleCallDetails(singleData)} className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200">
                   <img src='/public/assets/call.png' className="h-[20px] w-[20px]"/>
                    <h1>Call</h1>
-                </Link>
+                </button>
 
-                <Link className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200">
+                <button onClick={() => handleTextDetails(singleData)} className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200">
                   <img src='/public/assets/text.png' className="h-[20px] w-[20px]"/>
                   <h1>Text</h1>
-                </Link>
+                </button>
 
-                <Link className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200">
+                <button onClick={() => handleVideoDetails(singleData)} className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200">
                   <img src='/public/assets/video.png' className="h-[20px] w-[20px]"/>
                   <h1>Video</h1>
-                </Link>
+                </button>
               </div>
             </div>
           </div>
