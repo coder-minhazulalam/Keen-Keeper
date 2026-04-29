@@ -1,10 +1,11 @@
+import { Link } from "react-router";
+
 const CardData = ({ items }) => {
-  console.log("Card Data----------->", items);
 
   const { name, picture, days_since_contact, status, tags } = items;
 
   return (
-    <div className="bg-white rounded-2xl shadow-md p-6 w-8/10 md:w-full h-full mx-auto text-center">
+    <Link to={`/carddetails/${items.id}`} className="bg-white rounded-2xl shadow-md p-6 w-8/10 md:w-full h-full mx-auto text-center">
 
       {/* Profile Image */}
       <div className="flex justify-center">
@@ -48,7 +49,7 @@ const CardData = ({ items }) => {
         </span>
       </div>
 
-    </div>
+    </Link>
   );
 };
 
