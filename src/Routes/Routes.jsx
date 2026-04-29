@@ -3,6 +3,7 @@ import Roots from "../Componenets/Roots/Roots";
 import Home from "../Paging/Home/Home";
 import TimeLines from "../Paging/TimeLines/TimeLines";
 import Status from "../Paging/Status/Status";
+import ErrorRouting from "../ErrorRouting/ErrorRouting";
 
 const router = createBrowserRouter([{
 
@@ -14,18 +15,21 @@ const router = createBrowserRouter([{
             Component : Home
         },
         {
-            path : "home",
-            Component : Home
+            path : "/home",
+            Component : Home,
+            loader : () => fetch("/friends.json")
         },
         {
-            path : "timelines",
+            path : "/timelines",
             Component : TimeLines 
         },
         {
-            path : "status",
+            path : "/status",
             Component : Status
-        }
-    ]
+        },
+    ] ,
+    errorElement : <ErrorRouting/>,
+    
 }])
 
 
