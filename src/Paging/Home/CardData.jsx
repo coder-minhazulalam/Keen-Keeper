@@ -4,7 +4,7 @@ const CardData = ({ items }) => {
   const { name, picture, days_since_contact, status, tags } = items;
 
   return (
-    <div className="bg-white rounded-2xl shadow-md p-6 w-64 text-center">
+    <div className="bg-white rounded-2xl shadow-md p-6 w-8/10 md:w-full h-full mx-auto text-center">
 
       {/* Profile Image */}
       <div className="flex justify-center">
@@ -15,17 +15,14 @@ const CardData = ({ items }) => {
         />
       </div>
 
-      {/* Name */}
       <h2 className="text-2xl font-bold text-gray-800 mt-4">
         {name}
       </h2>
 
-      {/* Days */}
       <p className="text-gray-400 mt-1">
         {days_since_contact}d ago
       </p>
 
-      {/* Tags */}
       <div className="flex justify-center gap-2 mt-4 flex-wrap">
 
         {
@@ -41,18 +38,10 @@ const CardData = ({ items }) => {
 
       </div>
 
-      {/* Status */}
       <div className="mt-4">
         <span
-          className={`
-            px-4 py-1 rounded-full text-sm font-semibold text-white
-            ${
-              status === "overdue"
-                ? "bg-red-500"
-                : status === "almost due"
-                ? "bg-yellow-500"
-                : "bg-green-500"
-            }
+          className={`  px-4 py-1 rounded-full text-sm font-semibold text-white
+            ${ status === "overdue" ? "bg-red-500" : status === "almost due" ? "bg-yellow-500" : "bg-green-500" }
           `}
         >
           {status}

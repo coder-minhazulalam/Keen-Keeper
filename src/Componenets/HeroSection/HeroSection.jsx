@@ -1,7 +1,8 @@
 const HeroSection = () => {
   return (
-    <div className="mt-5 w-12/13 mx-auto sm:w-11/12">
-      <div className=" py-15 bg-[#F7F8FA] flex flex-col items-center pt-16 px-4">
+    <div className="bg-[#F7F8FA] w-full">
+     <div className=" w-12/13 mx-auto sm:w-11/12">
+      <div className=" py-15  flex flex-col items-center pt-16 px-4">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-[#1F2937]">
             Friends to keep close in your life
@@ -42,6 +43,9 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
+
+    </div>
+   
   );
 };
 
