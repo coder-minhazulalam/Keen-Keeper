@@ -20,11 +20,11 @@ const ContextApi = ({ children }) => {
      const exitCall =   Call_data.find((call) => call.id === Call_Details.id) 
 
      if(exitCall){
-            toast.error("Its already In the List");
+            toast.error(`You Already have a call with ${Call_Details.name} in the List`);
       return;
      }
      else{
-         toast.success("Added to the List");
+         toast.success(`Call with ${Call_Details.name}`);
      }
 
           setCallData([...Call_data, Call_Details])
@@ -37,11 +37,11 @@ const ContextApi = ({ children }) => {
      const exitText=   Text_data.find((text) => text.id === Text_Details.id) 
 
      if(exitText){
-            toast.error("Its already In the List");
+            toast.error(`You Already have a text message with ${Text_Details.name} in the List`);
       return;
      }
      else{
-         toast.success("Added to the List");
+         toast.success(`Text message to ${Text_Details.name}`);
      }
 
           setTextData([...Text_data, Text_Details])
@@ -54,11 +54,11 @@ const ContextApi = ({ children }) => {
      const exitVideo=   Video_data.find((video) => video.id === Video_Details.id) 
 
      if(exitVideo){
-            toast.error("Its already In the List");
+            toast.error(`You Already have a video call with ${Video_Details.name} in the List`);
       return;
      }
      else{
-         toast.success("Added to the List");
+         toast.success(`Video call with ${Video_Details.name}`);
      }
 
           setVideoData([...Video_data, Video_Details])

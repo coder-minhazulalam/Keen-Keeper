@@ -10,7 +10,18 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
   <ContextApi>
       <RouterProvider router={router} />
-      <ToastContainer/>
+      <ToastContainer
+        position="top-center"
+autoClose={3000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick={false}
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="colored"
+      />
   </ContextApi>
   </StrictMode>,
 )
