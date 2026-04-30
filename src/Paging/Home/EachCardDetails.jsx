@@ -6,7 +6,7 @@ const EachCardDetails = () => {
   const params = useParams();
   const details = useLoaderData();
 
-  const {  handleCallDetails, handleTextDetails, handleVideoDetails}  = useContext(DataContext)
+  const {  handleCardDetails }  = useContext(DataContext)
 
 
 
@@ -139,20 +139,29 @@ const EachCardDetails = () => {
               </h1>
 
               <div className="grid grid-cols-3 gap-4 ">
-                <button onClick={() => handleCallDetails(singleData)} className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200">
-                  <img src='/public/assets/call.png' className="h-[20px] w-[20px]"/>
-                   <h1>Call</h1>
-                </button>
+<button
+  onClick={() => handleCardDetails({ ...singleData, type: "call" })}
+  className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200"
+>
+  <img src="/public/assets/call.png" className="h-[20px] w-[20px]" />
+  <h1>Call</h1>
+</button>
 
-                <button onClick={() => handleTextDetails(singleData)} className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200">
-                  <img src='/public/assets/text.png' className="h-[20px] w-[20px]"/>
-                  <h1>Text</h1>
-                </button>
+<button
+  onClick={() => handleCardDetails({ ...singleData, type: "text" })}
+  className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200"
+>
+  <img src="/public/assets/text.png" className="h-[20px] w-[20px]" />
+  <h1>Text</h1>
+</button>
 
-                <button onClick={() => handleVideoDetails(singleData)} className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200">
-                  <img src='/public/assets/video.png' className="h-[20px] w-[20px]"/>
-                  <h1>Video</h1>
-                </button>
+<button
+  onClick={() => handleCardDetails({ ...singleData, type: "video" })}
+  className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200"
+>
+  <img src="/public/assets/video.png" className="h-[20px] w-[20px]" />
+  <h1>Video</h1>
+</button>
               </div>
             </div>
           </div>

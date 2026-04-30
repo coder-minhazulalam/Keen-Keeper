@@ -13,7 +13,6 @@ const router = createBrowserRouter([{
     children : [
         {
             index : true,
-            path : "/home",
             Component : Home,
             loader : () => fetch("/friends.json")
 

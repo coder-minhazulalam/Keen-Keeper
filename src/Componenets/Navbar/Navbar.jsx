@@ -34,7 +34,7 @@ const Navbar = () => {
           >
             <li>
               <NavLink
-                to="/home"
+                to="/"
                 className={({ isActive }) =>
                   isActive ? "btn btn-outline btn-accent" : "btn btn-ghost"
                 }
@@ -70,7 +70,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           <li>
             <NavLink
-              to="/home"
+              to="/"
               className={({ isActive }) =>
                 isActive ? "btn btn-outline btn-accent" : "btn btn-ghost"
               }
