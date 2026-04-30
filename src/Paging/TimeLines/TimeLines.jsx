@@ -20,7 +20,7 @@ const TimeLines = () => {
         </p>
       </div>
 
-      {/* dropdown part */}
+      
       <div className="dropdown w-11/13 px-5 ml-0 md:ml-8">
         <div tabIndex={0} role="button" className="btn m-1">
           Filter Timelines : {sortType}
