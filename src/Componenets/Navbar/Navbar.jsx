@@ -1,3 +1,5 @@
+import { FaHome, FaRegClock } from "react-icons/fa";
+import { GoGraph } from "react-icons/go";
 import { NavLink } from "react-router";
 
 const Navbar = () => {
@@ -9,6 +11,7 @@ const Navbar = () => {
           <span className="text-[#244D3F] text-[30px] font-bold">Keeper</span>
         </h1>
       </div>
+      {/* ----------------------------------------------- Mobile Screen ------------------------------------------------- */}
       <div className="navbar-end  sm:hidden ">
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost sm:hidden">
@@ -66,6 +69,8 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* ----------------------------------------------- PC Screen ------------------------------------------------- */}
+
       <div className="navbar-end hidden sm:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
@@ -75,7 +80,7 @@ const Navbar = () => {
                 isActive ? "btn btn-outline btn-accent" : "btn btn-ghost"
               }
             >
-              Home
+             <FaHome /> Home
             </NavLink>
           </li>
           <li>
@@ -85,7 +90,7 @@ const Navbar = () => {
                 isActive ? "btn btn-outline btn-accent" : "btn btn-ghost"
               }
             >
-              TimeLines
+             <FaRegClock /> TimeLines
             </NavLink>
           </li>
           <li>
@@ -95,7 +100,7 @@ const Navbar = () => {
                 isActive ? "btn btn-outline btn-accent" : "btn btn-ghost"
               }
             >
-              Status
+              <GoGraph />Status
             </NavLink>
           </li>
         </ul>

@@ -1,3 +1,4 @@
+
 const TimeLinesData = ({ item } ) => {
 
   const formattedDate = new Date(item.next_due_date)
@@ -7,12 +8,15 @@ const TimeLinesData = ({ item } ) => {
       year: "numeric",
     });
 
+
+
   return (
 <>
 
-          <div className="px-5 py-3 mt-5 bg-gray-200  rounded-2xl flex flex-col items-start justify-center  ">
 
-            
+
+
+          <div className="px-5 py-3 mt-5 bg-gray-200  rounded-2xl flex flex-col items-start justify-center  ">
 
           <div className="flex flex-row space-x-2 items-center">
               <div>

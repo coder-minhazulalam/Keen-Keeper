@@ -13,14 +13,7 @@ createRoot(document.getElementById('root')).render(
       <ToastContainer
         position="top-center"
 autoClose={3000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick={false}
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="colored"
+
       />
   </ContextApi>
   </StrictMode>,

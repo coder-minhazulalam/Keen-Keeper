@@ -32,7 +32,7 @@ const Home = () => {
 
           ) : (
 
-            <div className="w-full min-h-screen px-30 py-20 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div className="w-full min-h-screen md:px-30 py-20 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
 
               {
                 AllCardData.map((items) => (
