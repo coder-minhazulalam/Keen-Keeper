@@ -28,21 +28,21 @@ const Footer = () => {
                 href="#"
                 className="bg-white text-[#244D3F] p-3 rounded-full hover:scale-110 duration-300"
               >
-              <img src="/public/assets/facebook.png"/>
+              <img src="/assets/facebook.png"/>
               </a>
 
               <a
                 href="#"
                 className="bg-white text-[#244D3F] p-3 rounded-full hover:scale-110 duration-300"
               >
-              <img src="/public/assets/twitter.png"/>
+              <img src="/assets/twitter.png"/>
               </a>
 
               <a
                 href="#"
                 className="bg-white text-[#244D3F] p-3 rounded-full hover:scale-110 duration-300"
               >
-              <img src="/public/assets/instagram.png"/>
+              <img src="/assets/instagram.png"/>
               </a>
 
             </div>

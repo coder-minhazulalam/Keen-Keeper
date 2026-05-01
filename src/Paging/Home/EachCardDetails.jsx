@@ -73,17 +73,17 @@ const EachCardDetails = () => {
             </div>
 
             <button className="w-full bg-white  rounded-xl py-4 flex items-center justify-center gap-2">
-              <img src="/public/assets/BellSimpleZ.svg" />
+              <img src="/assets/BellSimpleZ.svg" />
               Snooze 2 Weeks
             </button>
 
             <button className="w-full bg-white  rounded-xl py-4 flex items-center justify-center gap-2">
-              <img src="/public/assets/Archive.svg" />
+              <img src="/assets/Archive.svg" />
               Archive
             </button>
 
             <button className="w-full bg-white rounded-xl py-4 text-red-500 flex items-center justify-center gap-2">
-              <img src="/public/assets/Trash.svg" />
+              <img src="/assets/Trash.svg" />
               Delete
             </button>
           </div>
@@ -143,7 +143,7 @@ const EachCardDetails = () => {
   onClick={() => handleCardDetails({ ...singleData, type: "call" })}
   className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200"
 >
-  <img src="/public/assets/call.png" className="h-[20px] w-[20px]" />
+  <img src="/assets/call.png" className="h-[20px] w-[20px]" />
   <h1>Call</h1>
 </button>
 
@@ -151,7 +151,7 @@ const EachCardDetails = () => {
   onClick={() => handleCardDetails({ ...singleData, type: "text" })}
   className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200"
 >
-  <img src="/public/assets/text.png" className="h-[20px] w-[20px]" />
+  <img src="/assets/text.png" className="h-[20px] w-[20px]" />
   <h1>Text</h1>
 </button>
 
@@ -159,7 +159,7 @@ const EachCardDetails = () => {
   onClick={() => handleCardDetails({ ...singleData, type: "video" })}
   className="flex flex-col justify-center space-y-2 items-center rounded-xl py-6 bg-gray-200"
 >
-  <img src="/public/assets/video.png" className="h-[20px] w-[20px]" />
+  <img src="/assets/video.png" className="h-[20px] w-[20px]" />
   <h1>Video</h1>
 </button>
               </div>
